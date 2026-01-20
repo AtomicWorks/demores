@@ -1,0 +1,573 @@
+﻿{
+  "categories": [
+    {
+      "id": 1,
+      "items": [
+        {
+          "description": null,
+          "id": 3,
+          "name": "Battered Calamari",
+          "price_cents": 59500
+        },
+        {
+          "description": null,
+          "id": 5,
+          "name": "Boneless Chicken Chaap",
+          "price_cents": 49500
+        },
+        {
+          "description": null,
+          "id": 6,
+          "name": "Chicken Tikka Porota Roll",
+          "price_cents": 39500
+        },
+        {
+          "description": null,
+          "id": 11,
+          "name": "Club Sandwich",
+          "price_cents": 44500
+        },
+        {
+          "description": null,
+          "id": 10,
+          "name": "Cream of Mushroom Soup",
+          "price_cents": 32500
+        },
+        {
+          "description": null,
+          "id": 8,
+          "name": "Fusion Phuchka",
+          "price_cents": 64500
+        },
+        {
+          "description": null,
+          "id": 1,
+          "name": "Loitta Fish Fry",
+          "price_cents": 52500
+        },
+        {
+          "description": null,
+          "id": 9,
+          "name": "Maki Roll",
+          "price_cents": 38500
+        },
+        {
+          "description": null,
+          "id": 7,
+          "name": "Minced Beef Porota Roll",
+          "price_cents": 49500
+        },
+        {
+          "description": null,
+          "id": 2,
+          "name": "Spicy Chingri Skewers",
+          "price_cents": 64500
+        },
+        {
+          "description": null,
+          "id": 4,
+          "name": "Tandoori Prawn Skewers",
+          "price_cents": 62500
+        }
+      ],
+      "name": "Snacks",
+      "sort_order": 1
+    },
+    {
+      "id": 2,
+      "items": [
+        {
+          "description": null,
+          "id": 18,
+          "name": "Beef Boti Kabab",
+          "price_cents": 69500
+        },
+        {
+          "description": null,
+          "id": 16,
+          "name": "Beef Seekh Kabab",
+          "price_cents": 64500
+        },
+        {
+          "description": null,
+          "id": 14,
+          "name": "Chicken Tandoori (Half)",
+          "price_cents": 64500
+        },
+        {
+          "description": null,
+          "id": 15,
+          "name": "Chicken Tengri Kabab",
+          "price_cents": 58500
+        },
+        {
+          "description": null,
+          "id": 12,
+          "name": "Chicken Tikka",
+          "price_cents": 49500
+        },
+        {
+          "description": null,
+          "id": 19,
+          "name": "Mutton Boti Kabab",
+          "price_cents": 69500
+        },
+        {
+          "description": null,
+          "id": 17,
+          "name": "Mutton Seekh Kabab",
+          "price_cents": 69500
+        },
+        {
+          "description": null,
+          "id": 13,
+          "name": "Reshmi Kabab",
+          "price_cents": 54500
+        },
+        {
+          "description": null,
+          "id": 20,
+          "name": "Rushtom",
+          "price_cents": 69500
+        }
+      ],
+      "name": "Charcoal Grill",
+      "sort_order": 2
+    },
+    {
+      "id": 3,
+      "items": [
+        {
+          "description": null,
+          "id": 34,
+          "name": "Beef Kala Bhuna",
+          "price_cents": 64500
+        },
+        {
+          "description": null,
+          "id": 31,
+          "name": "Beef Paya",
+          "price_cents": 52500
+        },
+        {
+          "description": null,
+          "id": 26,
+          "name": "Chicken Korma",
+          "price_cents": 54500
+        },
+        {
+          "description": null,
+          "id": 24,
+          "name": "Deep Fried Rupchanda",
+          "price_cents": 79500
+        },
+        {
+          "description": null,
+          "id": 33,
+          "name": "Duck Bhuna",
+          "price_cents": 64500
+        },
+        {
+          "description": null,
+          "id": 25,
+          "name": "Fragrant Chicken Curry",
+          "price_cents": 49500
+        },
+        {
+          "description": null,
+          "id": 30,
+          "name": "Lamb Shank",
+          "price_cents": 89500
+        },
+        {
+          "description": null,
+          "id": 27,
+          "name": "Morog Polao",
+          "price_cents": 52500
+        },
+        {
+          "description": null,
+          "id": 21,
+          "name": "Prawn Malai Curry",
+          "price_cents": 64500
+        },
+        {
+          "description": null,
+          "id": 22,
+          "name": "Seafood Malai Curry",
+          "price_cents": 109500
+        },
+        {
+          "description": null,
+          "id": 28,
+          "name": "Shorshe Aloor Dom",
+          "price_cents": 29500
+        },
+        {
+          "description": null,
+          "id": 23,
+          "name": "Shorshe Ilish",
+          "price_cents": 64500
+        },
+        {
+          "description": null,
+          "id": 32,
+          "name": "Spicy Beef Bhuna",
+          "price_cents": 64500
+        },
+        {
+          "description": null,
+          "id": 29,
+          "name": "Spicy Mixed Vegetable",
+          "price_cents": 34500
+        }
+      ],
+      "name": "Mains",
+      "sort_order": 3
+    },
+    {
+      "id": 4,
+      "items": [
+        {
+          "description": null,
+          "id": 35,
+          "name": "Basmati Rice",
+          "price_cents": 12500
+        },
+        {
+          "description": null,
+          "id": 37,
+          "name": "Bhuna Khichuri",
+          "price_cents": 17500
+        },
+        {
+          "description": null,
+          "id": 40,
+          "name": "Luchi (2 pieces)",
+          "price_cents": 7500
+        },
+        {
+          "description": null,
+          "id": 38,
+          "name": "Naan",
+          "price_cents": 7500
+        },
+        {
+          "description": null,
+          "id": 36,
+          "name": "Polao",
+          "price_cents": 18500
+        },
+        {
+          "description": null,
+          "id": 39,
+          "name": "Porota",
+          "price_cents": 7500
+        }
+      ],
+      "name": "Accompaniments",
+      "sort_order": 4
+    },
+    {
+      "id": 5,
+      "items": [
+        {
+          "description": null,
+          "id": 44,
+          "name": "Chingri Bhorta",
+          "price_cents": 32500
+        },
+        {
+          "description": null,
+          "id": 41,
+          "name": "Daal",
+          "price_cents": 14500
+        },
+        {
+          "description": null,
+          "id": 45,
+          "name": "Egg Curry",
+          "price_cents": 24500
+        },
+        {
+          "description": null,
+          "id": 42,
+          "name": "Labra",
+          "price_cents": 32500
+        },
+        {
+          "description": null,
+          "id": 46,
+          "name": "Roasted Pigeon",
+          "price_cents": 39500
+        },
+        {
+          "description": null,
+          "id": 43,
+          "name": "Taki Bhorta",
+          "price_cents": 24500
+        }
+      ],
+      "name": "Shared Dish",
+      "sort_order": 5
+    },
+    {
+      "id": 6,
+      "items": [
+        {
+          "description": null,
+          "id": 50,
+          "name": "Caramel Pudding",
+          "price_cents": 17500
+        },
+        {
+          "description": null,
+          "id": 49,
+          "name": "Coconut Ice Cream",
+          "price_cents": 21500
+        },
+        {
+          "description": null,
+          "id": 51,
+          "name": "Doi Bora",
+          "price_cents": 15500
+        },
+        {
+          "description": null,
+          "id": 47,
+          "name": "Faluda",
+          "price_cents": 24500
+        },
+        {
+          "description": null,
+          "id": 52,
+          "name": "Paan Pistachio Ice Cream",
+          "price_cents": 14500
+        },
+        {
+          "description": null,
+          "id": 48,
+          "name": "Shahi Tukra",
+          "price_cents": 12500
+        }
+      ],
+      "name": "Desserts",
+      "sort_order": 6
+    },
+    {
+      "id": 7,
+      "items": [
+        {
+          "description": null,
+          "id": 54,
+          "name": "Chicken Nuggets",
+          "price_cents": 29500
+        },
+        {
+          "description": null,
+          "id": 55,
+          "name": "Chicken Wings",
+          "price_cents": 33000
+        },
+        {
+          "description": null,
+          "id": 53,
+          "name": "French Fries",
+          "price_cents": 14500
+        }
+      ],
+      "name": "Kids Menu",
+      "sort_order": 7
+    },
+    {
+      "id": 8,
+      "items": [
+        {
+          "description": null,
+          "id": 57,
+          "name": "Flavored Lassi",
+          "price_cents": 21500
+        },
+        {
+          "description": null,
+          "id": 60,
+          "name": "Fresh Juice",
+          "price_cents": 22500
+        },
+        {
+          "description": null,
+          "id": 56,
+          "name": "Lassi (Salted/Sweet)",
+          "price_cents": 19500
+        },
+        {
+          "description": null,
+          "id": 58,
+          "name": "Lemonade",
+          "price_cents": 17500
+        },
+        {
+          "description": null,
+          "id": 62,
+          "name": "Masala Tea",
+          "price_cents": 8000
+        },
+        {
+          "description": null,
+          "id": 59,
+          "name": "Mint Lemonade",
+          "price_cents": 19500
+        },
+        {
+          "description": null,
+          "id": 61,
+          "name": "Soft Drinks",
+          "price_cents": 9500
+        }
+      ],
+      "name": "Drinks",
+      "sort_order": 8
+    },
+    {
+      "id": 9,
+      "items": [
+        {
+          "description": null,
+          "id": 64,
+          "name": "Americano",
+          "price_cents": 16000
+        },
+        {
+          "description": null,
+          "id": 65,
+          "name": "Cappuccino",
+          "price_cents": 19500
+        },
+        {
+          "description": null,
+          "id": 67,
+          "name": "Caramel Cappuccino",
+          "price_cents": 24500
+        },
+        {
+          "description": null,
+          "id": 70,
+          "name": "Caramel Latte",
+          "price_cents": 25500
+        },
+        {
+          "description": null,
+          "id": 63,
+          "name": "Espresso",
+          "price_cents": 14000
+        },
+        {
+          "description": null,
+          "id": 66,
+          "name": "Hazelnut Cappuccino",
+          "price_cents": 24500
+        },
+        {
+          "description": null,
+          "id": 69,
+          "name": "Hazelnut Latte",
+          "price_cents": 25500
+        },
+        {
+          "description": null,
+          "id": 73,
+          "name": "Hot Chocolate",
+          "price_cents": 22500
+        },
+        {
+          "description": null,
+          "id": 68,
+          "name": "Latte",
+          "price_cents": 19500
+        },
+        {
+          "description": null,
+          "id": 71,
+          "name": "Mocha",
+          "price_cents": 25500
+        },
+        {
+          "description": null,
+          "id": 72,
+          "name": "Mocha Latte",
+          "price_cents": 25500
+        }
+      ],
+      "name": "Coffee",
+      "sort_order": 9
+    },
+    {
+      "id": 10,
+      "items": [
+        {
+          "description": null,
+          "id": 83,
+          "name": "Additional Whipped Cream",
+          "price_cents": 3500
+        },
+        {
+          "description": null,
+          "id": 74,
+          "name": "Affogato",
+          "price_cents": 22500
+        },
+        {
+          "description": null,
+          "id": 76,
+          "name": "Caramel Frappe",
+          "price_cents": 28500
+        },
+        {
+          "description": null,
+          "id": 78,
+          "name": "Chocolate Milkshake",
+          "price_cents": 18500
+        },
+        {
+          "description": null,
+          "id": 82,
+          "name": "Flavoured Tea",
+          "price_cents": 14500
+        },
+        {
+          "description": null,
+          "id": 77,
+          "name": "Matcha Latte",
+          "price_cents": 24500
+        },
+        {
+          "description": null,
+          "id": 75,
+          "name": "Oreo Frappe",
+          "price_cents": 28500
+        },
+        {
+          "description": null,
+          "id": 80,
+          "name": "Oreo Milkshake",
+          "price_cents": 24500
+        },
+        {
+          "description": null,
+          "id": 81,
+          "name": "Red Velvet Milkshake",
+          "price_cents": 24500
+        },
+        {
+          "description": null,
+          "id": 79,
+          "name": "Vanilla Milkshake",
+          "price_cents": 18500
+        }
+      ],
+      "name": "Featured",
+      "sort_order": 10
+    }
+  ]
+}
+

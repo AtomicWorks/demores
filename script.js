@@ -528,15 +528,29 @@ if (checkoutForm) {
   });
 }
 
-fetch("/api/menu")
-  .then((response) => {
+const loadMenu = async () => {
+  try {
+    const response = await fetch("/api/menu");
     if (!response.ok) {
       throw new Error("Failed to fetch menu");
     }
-    return response.json();
-  })
-  .then(renderCategories)
-  .catch(showError);
+    const data = await response.json();
+    renderCategories(data);
+  } catch (error) {
+    try {
+      const fallbackResponse = await fetch("/menu_fallback.json");
+      if (!fallbackResponse.ok) {
+        throw new Error("Fallback unavailable");
+      }
+      const fallbackData = await fallbackResponse.json();
+      renderCategories(fallbackData);
+    } catch (fallbackError) {
+      showError();
+    }
+  }
+};
+
+loadMenu();
 
 loadCartFromStorage();
 updateCartDisplay();
