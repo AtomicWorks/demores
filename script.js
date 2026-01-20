@@ -130,13 +130,20 @@ const getCategoryImageUrl = (name) => {
     return "https://i.ibb.co/S4hS0LM7/Gemini-Generated-Image-fdalovfdalovfdal.png";
   if (lower.includes("mains"))
     return "https://i.ibb.co/qLd6kLQ4/Gemini-Generated-Image-schkqtschkqtschk.png";
-  if (lower.includes("accompaniments")) return "https://source.unsplash.com/600x450/?rice,naan";
-  if (lower.includes("shared")) return "https://source.unsplash.com/600x450/?family,meal";
-  if (lower.includes("desserts")) return "https://source.unsplash.com/600x450/?dessert";
-  if (lower.includes("kids")) return "https://source.unsplash.com/600x450/?kids,meal";
-  if (lower.includes("drinks")) return "https://source.unsplash.com/600x450/?beverage";
-  if (lower.includes("coffee")) return "https://source.unsplash.com/600x450/?coffee";
-  if (lower.includes("featured")) return "https://source.unsplash.com/600x450/?chef,special";
+  if (lower.includes("accompaniments"))
+    return "https://i.ibb.co/LDZCshYP/Gemini-Generated-Image-g2pjiwg2pjiwg2pj.png";
+  if (lower.includes("shared"))
+    return "https://i.ibb.co/FbMQn7MS/Gemini-Generated-Image-lgkdhnlgkdhnlgkd.png";
+  if (lower.includes("desserts"))
+    return "https://i.ibb.co/Jj8mwbPN/Gemini-Generated-Image-qstgalqstgalqstg.png";
+  if (lower.includes("kids"))
+    return "https://i.ibb.co/2D4hrdT/Gemini-Generated-Image-1bvdm1bvdm1bvdm1.png";
+  if (lower.includes("drinks"))
+    return "https://i.ibb.co/GvZCx7f5/Gemini-Generated-Image-om93xnom93xnom93.png";
+  if (lower.includes("coffee"))
+    return "https://i.ibb.co/TxXx1DXS/Gemini-Generated-Image-u4t4zru4t4zru4t4.png";
+  if (lower.includes("featured"))
+    return "https://i.ibb.co/G4T5nqf5/Gemini-Generated-Image-ph74cdph74cdph74.png";
   return "https://source.unsplash.com/600x450/?restaurant,food";
 };
 
