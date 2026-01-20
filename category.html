@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Terracotta Tales | Category</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <nav class="nav">
+          <a href="index.html#menu">Our Menu</a>
+          <a href="index.html#mission">Our Mission</a>
+          <a href="index.html#visit">Visit</a>
+        </nav>
+        <div class="brand">Terracotta Tales</div>
+        <div class="header-actions">
+          <button class="btn btn-outline btn-pill cart-pill" id="open-cart" type="button">
+            Cart
+            <span id="cart-count" class="cart-count">0</span>
+          </button>
+          <a class="btn btn-pill" href="index.html#menu">Back to Menu</a>
+        </div>
+      </header>
+
+      <section class="menu">
+        <div class="section-title">
+          <span class="eyebrow" id="category-eyebrow">Section</span>
+          <h2 id="category-title">Loading section</h2>
+          <p id="category-subtitle">Fetching dishes from the kitchen.</p>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-group" id="category-group">
+            <h3>Menu items</h3>
+            <div id="category-items">
+              <p>Loading items...</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <div id="cart-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="cart-title">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <p class="modal-eyebrow">Your Cart</p>
+            <h3 id="cart-title">Items in your cart</h3>
+          </div>
+          <button id="close-cart" class="modal-close" type="button" aria-label="Close cart">×</button>
+        </div>
+        <div id="cart-empty" class="cart-empty">
+          <p>Your cart is empty. Add a dish to get started.</p>
+        </div>
+        <div id="cart-items" class="cart-items"></div>
+        <div class="cart-summary">
+          <div>
+            <span>Subtotal</span>
+            <span id="cart-subtotal">BDT 0</span>
+          </div>
+          <div class="cart-total">
+            <span>Total</span>
+            <span id="cart-total">BDT 0</span>
+          </div>
+        </div>
+        <div class="cart-actions">
+          <button id="clear-cart" class="btn btn-outline" type="button">Clear</button>
+          <button id="checkout-cart" class="btn" type="button" disabled>Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="checkout-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="checkout-title">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <p class="modal-eyebrow">bKash Checkout</p>
+            <h3 id="checkout-title">Complete your order</h3>
+          </div>
+          <button id="close-checkout" class="modal-close" type="button" aria-label="Close checkout">×</button>
+        </div>
+        <div id="checkout-summary" class="checkout-summary"></div>
+        <form id="checkout-form" class="checkout-form">
+          <div class="form-row">
+            <label for="customer-name">Full name</label>
+            <input id="customer-name" name="name" type="text" placeholder="Enter your name" required />
+          </div>
+          <div class="form-row">
+            <label for="customer-phone">Phone number</label>
+            <input id="customer-phone" name="phone" type="tel" placeholder="01XXXXXXXXX" required />
+          </div>
+          <div class="form-row">
+            <label for="customer-address">Delivery address</label>
+            <input id="customer-address" name="address" type="text" placeholder="Street, area, city" required />
+          </div>
+          <div class="form-row">
+            <label for="customer-notes">Notes (optional)</label>
+            <textarea id="customer-notes" name="notes" rows="3" placeholder="Spice level, delivery notes, etc."></textarea>
+          </div>
+          <div class="checkout-actions">
+            <button class="btn btn-outline" type="button" id="cancel-checkout">Cancel</button>
+            <button class="btn" type="submit">Pay with bKash</button>
+          </div>
+          <p id="checkout-message" class="checkout-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+
+    <script src="category.js"></script>
+  </body>
+</html>

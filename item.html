@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Terracotta Tales | Dish</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <nav class="nav">
+          <a href="index.html#menu">Our Menu</a>
+          <a href="index.html#mission">Our Mission</a>
+          <a href="index.html#visit">Visit</a>
+        </nav>
+        <div class="brand">Terracotta Tales</div>
+        <div class="header-actions">
+          <button class="btn btn-outline btn-pill" id="open-cart" type="button">Cart</button>
+          <a class="btn btn-pill" href="index.html#menu">Back to Menu</a>
+        </div>
+      </header>
+
+      <main class="item-page">
+        <div class="breadcrumbs">
+          <a href="index.html#menu">Menu</a> / <span id="item-category">Dish</span>
+        </div>
+        <section class="item-detail">
+          <div class="item-image">
+            <img id="item-image" src="" alt="" />
+          </div>
+          <div class="item-card">
+            <h1 id="item-name">Loading dish...</h1>
+            <div class="item-meta">
+              <span id="item-price">BDT 0</span>
+              <span id="item-tag">Chef's pick</span>
+            </div>
+            <p id="item-description" class="item-description"></p>
+            <div class="item-ingredients">
+              <h3>What it is made of</h3>
+              <ul id="item-ingredients"></ul>
+            </div>
+            <div class="item-actions">
+              <div class="qty-picker">
+                <button type="button" class="qty-btn" id="qty-decrease">-</button>
+                <span id="qty-value" class="qty-value">1</span>
+                <button type="button" class="qty-btn" id="qty-increase">+</button>
+              </div>
+              <button class="btn" type="button" id="add-to-cart">Add to cart</button>
+            </div>
+            <p id="item-message" class="checkout-message" aria-live="polite"></p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-grid">
+          <div>
+            <h3>Terracotta Tales</h3>
+            <p>Clay-fired comfort and calm, every day in Dhaka.</p>
+          </div>
+          <div>
+            <h4>Links</h4>
+            <a href="index.html#menu">Menu</a>
+            <a href="index.html#mission">Mission</a>
+            <a href="index.html#visit">Visit</a>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <span>01300488127</span>
+            <span>Dhaka 1208</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="mini-cart-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="mini-cart-title">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <p class="modal-eyebrow">Your Cart</p>
+            <h3 id="mini-cart-title">Items in your cart</h3>
+          </div>
+          <button id="close-cart" class="modal-close" type="button" aria-label="Close cart">×</button>
+        </div>
+        <div id="mini-cart-items" class="cart-items"></div>
+        <div class="cart-summary">
+          <div>
+            <span>Total</span>
+            <span id="mini-cart-total">BDT 0</span>
+          </div>
+        </div>
+        <div class="cart-actions">
+          <button id="mini-cart-clear" class="btn btn-outline" type="button">Clear</button>
+          <a class="btn" href="index.html#menu">Go to menu</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="item.js"></script>
+  </body>
+</html>

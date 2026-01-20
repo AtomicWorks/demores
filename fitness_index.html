@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitBot - AI Fitness Assistant</title>
+    <link rel="stylesheet" href="fitness_styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1>💪 FitBot</h1>
+                <p>Your AI-Powered Fitness & Nutrition Assistant</p>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <button class="nav-btn active" data-tab="profile">Profile</button>
+            <button class="nav-btn" data-tab="routine">Weekly Routine</button>
+            <button class="nav-btn" data-tab="mealprep">Meal Prep</button>
+            <button class="nav-btn" data-tab="advice">Advice</button>
+            <button class="nav-btn" data-tab="calculator">BMI Calculator</button>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            
+            <!-- Profile Tab -->
+            <section id="profile-tab" class="tab-content active">
+                <h2>Your Fitness Profile</h2>
+                <form id="profileForm" class="form">
+                    <div class="form-group">
+                        <label for="weight">Weight (kg)</label>
+                        <input type="number" id="weight" placeholder="80" step="0.1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="height">Height (cm)</label>
+                        <input type="number" id="height" placeholder="180" step="0.1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Age (years)</label>
+                        <input type="number" id="age" placeholder="28" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="goal">Fitness Goal</label>
+                        <select id="goal" required>
+                            <option value="">Select a goal</option>
+                            <option value="weight loss">Weight Loss</option>
+                            <option value="muscle gain">Muscle Gain</option>
+                            <option value="strength">Strength Building</option>
+                            <option value="endurance">Endurance</option>
+                            <option value="general fitness">General Fitness</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">Experience Level</label>
+                        <select id="experience" required>
+                            <option value="">Select level</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="diet">Dietary Restrictions (comma-separated)</label>
+                        <input type="text" id="diet" placeholder="vegan, gluten-free, etc.">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Create Profile</button>
+                </form>
+                <div id="profileResult" class="result-box"></div>
+            </section>
+
+            <!-- Weekly Routine Tab -->
+            <section id="routine-tab" class="tab-content">
+                <h2>Generate Your Weekly Routine</h2>
+                <div class="info-box">
+                    <p>Fill in your profile above first, then generate your personalized weekly routine.</p>
+                </div>
+                <button id="generateRoutineBtn" class="btn btn-primary" disabled>Generate Weekly Routine</button>
+                <div id="routineResult" class="result-box"></div>
+            </section>
+
+            <!-- Meal Prep Tab -->
+            <section id="mealprep-tab" class="tab-content">
+                <h2>Meal Prep Guide</h2>
+                <div class="info-box">
+                    <p>Get a detailed meal prep guide tailored to your caloric needs and dietary restrictions.</p>
+                </div>
+                <button id="generateMealPrepBtn" class="btn btn-primary" disabled>Generate Meal Prep Guide</button>
+                <div id="mealPrepResult" class="result-box"></div>
+            </section>
+
+            <!-- Advice Tab -->
+            <section id="advice-tab" class="tab-content">
+                <h2>Personalized Fitness Advice</h2>
+                <form id="adviceForm" class="form">
+                    <div class="form-group">
+                        <label for="concern">What's your fitness concern?</label>
+                        <textarea id="concern" placeholder="e.g., How to prevent injuries? What supplements should I take?" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Get Advice</button>
+                </form>
+                <div id="adviceResult" class="result-box"></div>
+            </section>
+
+            <!-- BMI Calculator Tab -->
+            <section id="calculator-tab" class="tab-content">
+                <h2>BMI Calculator</h2>
+                <form id="bmiForm" class="form">
+                    <div class="form-group">
+                        <label for="calcWeight">Weight (kg)</label>
+                        <input type="number" id="calcWeight" placeholder="80" step="0.1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="calcHeight">Height (cm)</label>
+                        <input type="number" id="calcHeight" placeholder="180" step="0.1" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Calculate BMI</button>
+                </form>
+                <div id="bmiResult" class="result-box"></div>
+            </section>
+
+        </main>
+
+        <!-- Loading Spinner -->
+        <div id="loadingSpinner" class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Generating your personalized plan...</p>
+        </div>
+
+    </div>
+
+    <script src="fitness_script.js"></script>
+</body>
+</html>

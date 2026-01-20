@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Terracotta Tales | Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <nav class="nav">
+          <a href="#menu">Our Menu</a>
+          <a href="#mission">Our Mission</a>
+          <a href="#visit">Visit</a>
+        </nav>
+        <div class="brand">Terracotta Tales</div>
+        <div class="header-actions">
+          <button class="btn btn-outline btn-pill cart-pill" id="open-cart" type="button">
+            Cart
+            <span id="cart-count" class="cart-count">0</span>
+          </button>
+          <a class="btn btn-pill" href="#menu">Order</a>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="hero-media">
+          <div class="hero-overlay">
+            <span class="eyebrow">Menu</span>
+            <h1>Clay-fired comfort, served warm.</h1>
+            <p>Charcoal grills, slow-cooked curries, and nostalgic sides crafted in Dhaka.</p>
+            <a class="btn" href="#menu">Order now</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="mission" class="mission">
+        <div class="mission-inner">
+          <h2>Our Mission</h2>
+          <p>
+            We celebrate Bangladeshi flavors with open-fire cooking and clayware that keeps every
+            dish fragrant from kitchen to table.
+          </p>
+        </div>
+      </section>
+
+      <section id="menu" class="menu">
+        <div class="section-title">
+          <span class="eyebrow">Choose from</span>
+          <h2>Terracotta favorites</h2>
+          <p>Explore each section for clay-fired dishes and slow-cooked comforts.</p>
+        </div>
+        <div id="category-grid" class="category-grid">
+          <article class="category-card category-loading">
+            <div class="category-media"></div>
+            <div class="category-body">
+              <h3>Loading sections</h3>
+              <p>Preparing the menu categories.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="visit" class="visit">
+        <div class="visit-inner">
+          <div>
+            <h2>Visit Terracotta Tales</h2>
+            <p>Cozy dining, charcoal grills, and clay pots served warm in the heart of Dhaka.</p>
+          </div>
+          <div class="visit-grid">
+            <div>
+              <span class="meta-label">Location</span>
+              <span class="meta-value">I/A, 1208 Bir Uttam Mir Shawkat Sarak, Dhaka 1208</span>
+            </div>
+            <div>
+              <span class="meta-label">Phone</span>
+              <span class="meta-value">01300488127</span>
+            </div>
+            <div>
+              <span class="meta-label">Hours</span>
+              <span class="meta-value">Daily 12 PM - 11 PM</span>
+            </div>
+            <div>
+              <span class="meta-label">Dining</span>
+              <span class="meta-value">Walk-ins + family tables</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-grid">
+          <div>
+            <h3>Terracotta Tales</h3>
+            <p>Clay-fired comfort and calm, every day in Dhaka.</p>
+          </div>
+          <div>
+            <h4>Links</h4>
+            <a href="#menu">Menu</a>
+            <a href="#mission">Mission</a>
+            <a href="#visit">Visit</a>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <span>01300488127</span>
+            <span>Dhaka 1208</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="checkout-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="checkout-title">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <p class="modal-eyebrow">bKash Checkout</p>
+            <h3 id="checkout-title">Complete your order</h3>
+          </div>
+          <button id="close-checkout" class="modal-close" type="button" aria-label="Close checkout">×</button>
+        </div>
+        <div id="checkout-summary" class="checkout-summary"></div>
+        <form id="checkout-form" class="checkout-form">
+          <div class="form-row">
+            <label for="customer-name">Full name</label>
+            <input id="customer-name" name="name" type="text" placeholder="Enter your name" required />
+          </div>
+          <div class="form-row">
+            <label for="customer-phone">Phone number</label>
+            <input id="customer-phone" name="phone" type="tel" placeholder="01XXXXXXXXX" required />
+          </div>
+          <div class="form-row">
+            <label for="customer-address">Delivery address</label>
+            <input id="customer-address" name="address" type="text" placeholder="Street, area, city" required />
+          </div>
+          <div class="form-row">
+            <label for="customer-notes">Notes (optional)</label>
+            <textarea id="customer-notes" name="notes" rows="3" placeholder="Spice level, delivery notes, etc."></textarea>
+          </div>
+          <div class="checkout-actions">
+            <button class="btn btn-outline" type="button" id="cancel-checkout">Cancel</button>
+            <button class="btn" type="submit">Pay with bKash</button>
+          </div>
+          <p id="checkout-message" class="checkout-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+
+    <div id="cart-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="cart-title">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <p class="modal-eyebrow">Your Cart</p>
+            <h3 id="cart-title">Items in your cart</h3>
+          </div>
+          <button id="close-cart" class="modal-close" type="button" aria-label="Close cart">×</button>
+        </div>
+        <div id="cart-empty" class="cart-empty">
+          <p>Your cart is empty. Add a dish to get started.</p>
+        </div>
+        <div id="cart-items" class="cart-items"></div>
+        <div class="cart-summary">
+          <div>
+            <span>Subtotal</span>
+            <span id="cart-subtotal">BDT 0</span>
+          </div>
+          <div class="cart-total">
+            <span>Total</span>
+            <span id="cart-total">BDT 0</span>
+          </div>
+        </div>
+        <div class="cart-actions">
+          <button id="clear-cart" class="btn btn-outline" type="button">Clear</button>
+          <button id="checkout-cart" class="btn" type="button" disabled>Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
