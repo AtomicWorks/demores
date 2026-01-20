@@ -1,4 +1,5 @@
 const categoryItems = document.getElementById("category-items");
+const itemScroll = document.querySelector(".item-scroll");
 const categoryTitle = document.getElementById("category-title");
 const categorySubtitle = document.getElementById("category-subtitle");
 const categoryEyebrow = document.getElementById("category-eyebrow");
@@ -362,11 +363,11 @@ const renderCategoryItems = (category) => {
     textWrap.className = "menu-item-text";
 
     const name = document.createElement("span");
-    name.className = "menu-item-name";
+    name.className = "menu-item-name menu-item-title";
     name.textContent = item.name;
 
     const price = document.createElement("span");
-    price.className = "price";
+    price.className = "price menu-price";
     price.textContent = formatPrice(item.price_cents);
 
     textWrap.appendChild(name);
@@ -628,3 +629,17 @@ if (checkoutForm) {
 loadCartFromStorage();
 updateCartDisplay();
 loadCategory();
+
+if (itemScroll) {
+  itemScroll.addEventListener(
+    "wheel",
+    (event) => {
+      if (Math.abs(event.deltaY) <= Math.abs(event.deltaX)) {
+        return;
+      }
+      event.preventDefault();
+      itemScroll.scrollLeft += event.deltaY;
+    },
+    { passive: false },
+  );
+}

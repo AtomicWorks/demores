@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="item-theme">
     <div class="page">
       <header class="site-header">
         <nav class="nav">
@@ -33,10 +33,11 @@
             <img id="item-image" src="" alt="" />
           </div>
           <div class="item-card">
+            <div class="item-badge">New</div>
             <h1 id="item-name">Loading dish...</h1>
             <div class="item-meta">
-              <span id="item-price">BDT 0</span>
-              <span id="item-tag">Chef's pick</span>
+              <span id="item-price" class="item-pill">BDT 0</span>
+              <span id="item-tag" class="item-pill item-pill-light">Chef's pick</span>
             </div>
             <p id="item-description" class="item-description"></p>
             <div class="item-ingredients">
@@ -44,12 +45,12 @@
               <ul id="item-ingredients"></ul>
             </div>
             <div class="item-actions">
-              <div class="qty-picker">
+              <div class="qty-picker item-qty">
                 <button type="button" class="qty-btn" id="qty-decrease">-</button>
                 <span id="qty-value" class="qty-value">1</span>
                 <button type="button" class="qty-btn" id="qty-increase">+</button>
               </div>
-              <button class="btn" type="button" id="add-to-cart">Add to cart</button>
+              <button class="btn btn-dark" type="button" id="add-to-cart">Add to cart</button>
             </div>
             <p id="item-message" class="checkout-message" aria-live="polite"></p>
           </div>
