@@ -1114,7 +1114,7 @@ body.item-theme {
     width: 120px;
     justify-self: center;
     margin: 6px auto 4px;
-    margin-left: 10px;
+    margin-left: 20px;
   }
 
   .hero-copy {
@@ -1160,7 +1160,7 @@ body.item-theme {
 
   .hero-left-bottom {
     grid-area: leftBottom;
-    margin-top: 8px;
+    margin-top: 15px;
   }
 
   .hero-right-top {
@@ -1169,7 +1169,7 @@ body.item-theme {
 
   .hero-right-bottom {
     grid-area: rightBottom;
-    margin-top: 8px;
+    margin-top: 15px;
   }
 
   .nav {
