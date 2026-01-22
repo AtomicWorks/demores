@@ -1065,7 +1065,7 @@ body.item-theme {
   }
 
   .header-actions {
-    justify-content: flex-start;
+    justify-content: flex-end;
   }
 
   .hero-overlay {
@@ -1081,5 +1081,46 @@ body.item-theme {
 @media (max-width: 640px) {
   .hero-media {
     min-height: 360px;
+  }
+
+  .hero-scene {
+    padding: 28px 20px;
+    margin: 0;
+    min-height: auto;
+  }
+
+  .hero-stage {
+    min-height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    align-items: center;
+  }
+
+  .hero-float {
+    position: static;
+    width: 100%;
+    border-radius: 22px;
+  }
+
+  .hero-center {
+    grid-column: 1 / -1;
+    width: 60%;
+    justify-self: center;
+    margin: 6px 0 4px;
+  }
+
+  .hero-copy {
+    grid-column: 1 / -1;
+    order: 2;
+    margin-top: 8px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.4rem, 10vw, 3.2rem);
+  }
+
+  .hero-title-primary {
+    transform: translateX(0);
   }
 }
