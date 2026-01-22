@@ -464,7 +464,36 @@ const loadCategory = async () => {
 
     renderCategoryItems(category);
   } catch (error) {
-    showCategoryError("Please refresh or try again later.");
+    try {
+      const fallbackResponse = await fetch("/menu_fallback.json");
+      if (!fallbackResponse.ok) {
+        throw new Error("Fallback unavailable");
+      }
+      const fallbackData = await fallbackResponse.json();
+      const categories = fallbackData.categories || [];
+      const category = categories.find(
+        (item) => String(item.id) === String(categoryId),
+      );
+      if (!category) {
+        showCategoryError("That category was not found.");
+        return;
+      }
+
+      if (categoryEyebrow) {
+        categoryEyebrow.textContent = "Section";
+      }
+      if (categoryTitle) {
+        categoryTitle.textContent = category.name;
+      }
+      if (categorySubtitle) {
+        const count = Array.isArray(category.items) ? category.items.length : 0;
+        categorySubtitle.textContent = `${count} dishes ready to order.`;
+      }
+
+      renderCategoryItems(category);
+    } catch (fallbackError) {
+      showCategoryError("Please refresh or try again later.");
+    }
   }
 };
 
