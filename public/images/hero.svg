@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#141416"/>
+      <stop offset="1" stop-color="#1f1f23"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#g)"/>
+  <circle cx="980" cy="280" r="220" fill="#2a2a2f"/>
+  <circle cx="980" cy="280" r="150" fill="#c9a16a" opacity="0.35"/>
+  <rect x="180" y="220" width="460" height="420" rx="36" fill="#1c1c1f" stroke="#2b2b2f" stroke-width="3"/>
+  <rect x="230" y="280" width="360" height="260" rx="24" fill="#0f0f10"/>
+  <text x="260" y="430" fill="#c9a16a" font-size="64" font-family="Cormorant Garamond, serif">Atomic</text>
+</svg>

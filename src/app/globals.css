@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background text-textPrimary font-body antialiased;
+}
+
+::selection {
+  background: rgba(201, 161, 106, 0.35);
+}
+
+.section-pad {
+  @apply px-4 sm:px-6 lg:px-10;
+}
+
+.section-wrap {
+  @apply mx-auto w-full max-w-6xl;
+}
+
+.button-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-black transition hover:bg-[#d7b07a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background;
+}
+
+.button-ghost {
+  @apply inline-flex items-center justify-center rounded-full border border-line px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-textPrimary transition hover:border-accent hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background;
+}
+
+.section-title {
+  @apply font-display text-3xl uppercase tracking-[0.12em] sm:text-4xl lg:text-5xl;
+}
+
+.section-kicker {
+  @apply text-xs uppercase tracking-[0.4em] text-accent;
+}
+
+.card-surface {
+  @apply rounded-3xl border border-line bg-soft/80 p-6 shadow-soft;
+}
+
+.grid-lines {
+  background-image: linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 140px 140px;
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0f0f10"/>
+  <circle cx="920" cy="140" r="140" fill="#1c1c1f"/>
+  <circle cx="980" cy="120" r="90" fill="#c9a16a" opacity="0.5"/>
+  <text x="80" y="250" fill="#f4eee6" font-size="64" font-family="Cormorant Garamond, serif" letter-spacing="6">ATOMIC CAFE</text>
+  <text x="80" y="330" fill="#b6ada1" font-size="28" font-family="Sora, sans-serif" letter-spacing="4">SPECIALTY COFFEE STUDIO</text>
+  <rect x="80" y="380" width="260" height="4" fill="#c9a16a"/>
+</svg>

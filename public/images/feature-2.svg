@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#131316"/>
+  <rect x="140" y="140" width="420" height="520" rx="40" fill="#1b1b20" stroke="#2b2b2f" stroke-width="3"/>
+  <rect x="220" y="240" width="260" height="220" rx="26" fill="#0f0f10"/>
+  <circle cx="860" cy="360" r="210" fill="#2a2a2f"/>
+  <circle cx="860" cy="360" r="140" fill="#c9a16a" opacity="0.3"/>
+  <text x="260" y="520" fill="#c9a16a" font-size="46" font-family="Cormorant Garamond, serif">Reserve</text>
+</svg>

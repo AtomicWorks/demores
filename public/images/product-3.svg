@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <rect width="600" height="600" rx="48" fill="#17171a"/>
+  <rect x="120" y="130" width="360" height="340" rx="36" fill="#101013" stroke="#2b2b2f" stroke-width="3"/>
+  <rect x="160" y="200" width="280" height="180" rx="24" fill="#1f1f23"/>
+  <path d="M200 430h200" stroke="#c9a16a" stroke-width="6" stroke-linecap="round"/>
+  <text x="200" y="320" fill="#c9a16a" font-size="48" font-family="Cormorant Garamond, serif">Cafe</text>
+</svg>
